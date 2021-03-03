@@ -9,6 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FilmsLy">
+        <activity android:name=".Results"></activity>
+        <activity android:name=".CategoriesView" />
+        <activity android:name=".Home" />
+        <activity android:name=".QuestionThreeActorsAndWhoTheyPlay" />
+        <activity android:name=".QuestionTwoDirectorsAndWriters" />
+        <activity android:name=".QuestionOneFamousWords" />
+        <activity android:name=".QuestionOneActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
