@@ -53,7 +53,7 @@
             android:id="@+id/tv_question"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Who voices the character of Lightning McQueen in Cars?"
+            android:text="James Wan directed which of these films in 2013?"
             android:gravity="center"
             android:textSize="24dp"
             android:textStyle="bold"
@@ -65,7 +65,7 @@
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_gravity="center"
-            android:src="@drawable/theater"
+            android:src="@drawable/cinema"
             android:layout_marginTop="30dp"/>
 
         <RadioGroup
@@ -79,7 +79,7 @@
                 android:id="@+id/rb_answer_one"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Owen Wilson"
+                android:text="Frozen"
                 android:textSize="24sp"
                 android:textColor="@color/white"
                 android:layout_marginBottom="30dp"/>
@@ -88,7 +88,7 @@
                 android:id="@+id/rb_answer_two"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Brad Pitt"
+                android:text="World War Z"
                 android:textSize="24sp"
                 android:textColor="@color/white"
                 android:layout_marginBottom="30dp"/>
@@ -97,7 +97,7 @@
                 android:id="@+id/rb_answer_three"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Vince Vaughn"
+                android:text="Fast and Furious 6"
                 android:textSize="24sp"
                 android:textColor="@color/white"
                 android:layout_marginBottom="30dp"/>
@@ -106,7 +106,7 @@
                 android:id="@+id/rb_answer_four"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Jim Carrey"
+                android:text="The Conjuring"
                 android:textSize="24sp"
                 android:textColor="@color/white"
                 android:layout_marginBottom="30dp"/>

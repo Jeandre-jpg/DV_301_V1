@@ -12,10 +12,24 @@
         <activity android:name=".Results"></activity>
         <activity android:name=".CategoriesView" />
         <activity android:name=".Home" />
-        <activity android:name=".QuestionThreeActorsAndWhoTheyPlay" />
-        <activity android:name=".QuestionTwoDirectorsAndWriters" />
-        <activity android:name=".QuestionOneFamousWords" />
-        <activity android:name=".QuestionOneActivity" />
+        <activity
+            android:name=".QuestionThreeActorsAndWhoTheyPlay"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FilmsLy.Dark"
+            android:windowSoftInputMode="adjustResize"
+            android:label="Question Three: Actors and Who They Play"/>
+        <activity
+            android:name=".QuestionTwoDirectorsAndWriters"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FilmsLy.Dark"
+            android:windowSoftInputMode="adjustResize"
+            android:label="Question Two: Directors and Writers"/>
+        <activity
+            android:name=".QuestionOneFamousWords"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FilmsLy.Dark"
+            android:windowSoftInputMode="adjustResize"
+            android:label="Question One: Famous Words"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

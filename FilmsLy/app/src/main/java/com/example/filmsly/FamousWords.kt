@@ -2,8 +2,11 @@ package com.example.filmsly
 
 
 object FamousWords {
+    const val USER_NAME : String = "username"
+    const val WRONG_ANSWERS : String = "wrongAnswers"
     fun getQuestions(): ArrayList<Question>{
         val questionsList = ArrayList<Question>()
+
 
         val question1 = Question( 1,
                 "- You cant handle the truth - is a famous quote from which drama?",

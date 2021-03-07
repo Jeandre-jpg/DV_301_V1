@@ -1,6 +1,8 @@
 package com.example.filmsly
 
 object DirectorsAndWriters {
+    const val USER_NAME : String = "username"
+    const val WRONG_ANSWERS : String = "wrongAnswers"
     fun getQuestions(): ArrayList<Question>{
         val questionsList = ArrayList<Question>()
 

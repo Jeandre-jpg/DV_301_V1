@@ -1,9 +1,138 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    android:fillViewport="true"
     tools:context=".QuestionOneFamousWords">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:scaleType="centerCrop"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ProgressBar
+                android:id="@+id/pb_progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:max="3"
+                android:minHeight="50dp"
+                android:progress="0"
+                android:indeterminate="false"/>
+
+            <TextView
+                android:id="@+id/tv_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1/3"
+                android:gravity="center"
+                android:padding="15dp"
+                android:textColorHint="@color/purpleSemiLight"
+                android:textSize="14dp"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="- You cant handle the truth - is a famous quote from which drama?"
+            android:gravity="center"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginTop="30dp"/>
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:src="@drawable/popcorn"
+            android:layout_marginTop="30dp"/>
+
+        <RadioGroup
+            android:id="@+id/rg_options"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:layout_marginTop="20dp">
+
+            <RadioButton
+                android:id="@+id/rb_answer_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A few Good Men"
+                android:textSize="24sp"
+                android:textColor="@color/white"
+                android:layout_marginBottom="30dp"/>
+
+            <RadioButton
+                android:id="@+id/rb_answer_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Men of Honour"
+                android:textSize="24sp"
+                android:textColor="@color/white"
+                android:layout_marginBottom="30dp"/>
+
+            <RadioButton
+                android:id="@+id/rb_answer_three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Play Misty for me"
+                android:textSize="24sp"
+                android:textColor="@color/white"
+                android:layout_marginBottom="30dp"/>
+
+            <RadioButton
+                android:id="@+id/rb_answer_four"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Black Hawk Down"
+                android:textSize="24sp"
+                android:textColor="@color/white"
+                android:layout_marginBottom="30dp"/>
+
+        </RadioGroup>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            app:cardCornerRadius="30dp">
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:text="Next"
+            android:fontFamily="@font/montserrat"
+            android:textAlignment="center"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:background="@color/goldTrim"
+            tools:ignore="RtlCompat"/>
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+</ScrollView>
