@@ -19,7 +19,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
            android:layout_gravity="center"
-            android:layout_marginTop="-150dp"
+            android:layout_marginTop="50dp"
             android:layout_marginBottom="30dp"
             android:fontFamily="@font/didot"
             android:text="Welcome to Films.Ly!"
@@ -31,6 +31,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
+            android:layout_marginTop="-10dp"
             android:layout_marginRight="30dp"
             app:cardBackgroundColor="@color/purpleLight"
             app:cardCornerRadius="20dp"
@@ -101,5 +102,16 @@
 
 
 </androidx.cardview.widget.CardView>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_last_user"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/ic_baseline_account_circle_24"
+            app:tint="#ffffff"
+            />
     </LinearLayout>
 </LinearLayout>
