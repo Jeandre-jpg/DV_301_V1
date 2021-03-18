@@ -17,7 +17,9 @@ class MainActivity : AppCompatActivity() {
 
 
         btn_start.setOnClickListener(View.OnClickListener {
-            startActivity(Intent(this@MainActivity, Home::class.java))
+            startActivity(Intent(this, Home::class.java))
         })
+
+
     }
 }

@@ -55,7 +55,8 @@ class QuestionTwoDirectorsAndWriters : AppCompatActivity() {
                 val intent = Intent(this, QuestionTwoDirectorsAndWriters::class.java)
                 intent.putExtra(FamousWords.USER_NAME, userName)
                 intent.putExtra(FamousWords.WRONG_ANSWERS, wrongAnswers)
-                Activity(intent)
+                startActivity(intent)
+                finish()
             }else{
                 //Give Validation
                 Toast.makeText(this, "Please select your answer", Toast.LENGTH_SHORT).show()

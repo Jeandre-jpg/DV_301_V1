@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/background2"
     android:fillViewport="true"
-    tools:context=".QuestionTwoDirectorsAndWriters">
+    tools:context=".QuestionTwoDirectorsAndWriters2">
 
 
     <LinearLayout
@@ -53,7 +53,7 @@
             android:id="@+id/tv_question"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="James Wan directed which of these films in 2013?"
+            android:text="The 2013 movie, The Great Gatsby, is based on a novel written by whom?"
             android:gravity="center"
             android:textSize="24dp"
             android:textStyle="bold"
@@ -72,14 +72,14 @@
             android:id="@+id/rg_options"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="15dp"
+            android:padding="1dp"
             android:layout_marginTop="20dp">
 
             <RadioButton
                 android:id="@+id/rb_answer_one"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Frozen"
+                android:text="Oscar Wilde"
                 android:textSize="24sp"
                 android:textColor="@color/white"
                 android:layout_marginBottom="30dp"/>
@@ -88,7 +88,7 @@
                 android:id="@+id/rb_answer_two"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="World War Z"
+                android:text="F. Scott Fitzgerald"
                 android:textSize="24sp"
                 android:textColor="@color/white"
                 android:layout_marginBottom="30dp"/>
@@ -97,7 +97,7 @@
                 android:id="@+id/rb_answer_three"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Fast and Furious 6"
+                android:text="James Joyce"
                 android:textSize="24sp"
                 android:textColor="@color/white"
                 android:layout_marginBottom="30dp"/>
@@ -106,7 +106,7 @@
                 android:id="@+id/rb_answer_four"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="The Conjuring"
+                android:text="George R. R. Martin"
                 android:textSize="24sp"
                 android:textColor="@color/white"
                 android:layout_marginBottom="30dp"/>
@@ -126,7 +126,7 @@
                 android:textAlignment="center"
                 android:padding="10dp"
                 android:textStyle="bold"
-                android:textSize="24sp"
+                android:textSize="15sp"
                 android:textColor="@color/white"
                 android:background="@color/goldTrim"
                 tools:ignore="RtlCompat"/>

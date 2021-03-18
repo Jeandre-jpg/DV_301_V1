@@ -8,7 +8,7 @@ object ActorsAndWhoTheyPlay {
 
     val question1 = Question( 1,
             "Who voices the character of Lightning McQueen in Cars?",
-            R.drawable.ic_logo,
+        R.drawable.popcorn,
             "Owen Wilson",
             "Brad Pitt",
             "Vince Vaughn",
@@ -18,7 +18,7 @@ object ActorsAndWhoTheyPlay {
     val question2 = Question(
             2,
             "The lead actor in Kindergarten Cop was played by whom?",
-            R.drawable.ic_logo,
+        R.drawable.popcorn,
             "Michael Cera",
             "Bradley Cooper",
             "David Schwimmer",
@@ -28,7 +28,7 @@ object ActorsAndWhoTheyPlay {
     val question3 = Question(
             3,
             "Who voices Scar in the Lion King?",
-            R.drawable.ic_logo,
+        R.drawable.popcorn,
             "Jeremy Irons",
             "Paul Hogan",
             "Jared Leto",

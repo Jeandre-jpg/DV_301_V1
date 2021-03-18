@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.AlarmClock
 import android.util.Log
+import android.view.View
+import android.widget.Button
 import android.widget.RadioButton
 import android.widget.TextView
 import android.widget.Toast
@@ -14,6 +16,8 @@ class QuestionOneFamousWords : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_question_one_famous_words)
+
+
 
 
                 //Get Intent Extra information
@@ -40,6 +44,8 @@ class QuestionOneFamousWords : AppCompatActivity() {
                 pb_progressBar.progress = questionNumber
                 tv_progress.text = questionNumber.toString() + "/" + questionsList.size.toString()
 
+
+
                 //set a btn on click listener
                 var answers: RadioButton
                 var wrongAnswers: Int = 0
@@ -49,22 +55,25 @@ class QuestionOneFamousWords : AppCompatActivity() {
                         //Capture answer
                         answers = findViewById(id)
 
-                        //Check if answer is yes
-                        if (answers.text == question.optionOne){
+                        if(answers.text == question.optionOne){
                             wrongAnswers++
                         }
-                        //Toast.makeText(this, "Checked answer: ${answers.text}", Toast.LENGTH_SHORT).show()
-                        //TODO: Navigation
-                        val intent = Intent(this, QuestionOneFamousWords::class.java)
-                        intent.putExtra(FamousWords.USER_NAME, userName)
-                        intent.putExtra(FamousWords.WRONG_ANSWERS, wrongAnswers)
-                        Activity(intent)
+                        //Navigation
+                        val intent = Intent(this, QuestionOneFamousWords2::class.java)
+                        intent.putExtra(Constants.USER_NAME, userName)
+                        intent.putExtra(Constants.WRONG_ANSWERS, wrongAnswers)
+                        startActivity(intent)
+                        finish()
+
+
                     }else{
                         //Give Validation
                         Toast.makeText(this, "Please select your answer", Toast.LENGTH_SHORT).show()
                     }
                 }
             }
+
+
 
             private fun Activity(intent: Intent) {
 

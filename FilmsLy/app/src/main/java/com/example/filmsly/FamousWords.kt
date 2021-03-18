@@ -10,7 +10,7 @@ object FamousWords {
 
         val question1 = Question( 1,
                 "- You cant handle the truth - is a famous quote from which drama?",
-                R.drawable.ic_logo,
+           R.drawable.theater,
                 "A few Good Men",
                 "Men of Honour",
                 "Play Misty for me",
@@ -21,7 +21,7 @@ object FamousWords {
                 2,
                 "- There's a passage I got memorized. Ezekiel 25:17 - is spoken by " +
                 "Samuel L. Jackson in which film?",
-                R.drawable.ic_logo,
+            R.drawable.theater,
                 "Pulp Fiction",
                 "Reservoir Dogs",
                 "Taxi Driver",
@@ -31,7 +31,7 @@ object FamousWords {
         val question3 = Question(
                 3,
                 "Which 2014 science-fiction film had the tag-line: Live Die. Repeat?",
-                R.drawable.ic_logo,
+            R.drawable.theater,
                 "Dracula Untold",
                 "Guardians of the Galaxy",
                 "Interstellar",

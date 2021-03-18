@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/background2"
     android:fillViewport="true"
-    tools:context=".QuestionTwoDirectorsAndWriters">
+    tools:context=".QuestionThreeActorsAndWhoTheyPlay3">
 
 
     <LinearLayout
@@ -53,7 +53,7 @@
             android:id="@+id/tv_question"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="James Wan directed which of these films in 2013?"
+            android:text="Who voices Scar in the Lion King?"
             android:gravity="center"
             android:textSize="24dp"
             android:textStyle="bold"
@@ -65,7 +65,7 @@
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_gravity="center"
-            android:src="@drawable/cinema"
+            android:src="@drawable/theater"
             android:layout_marginTop="30dp"/>
 
         <RadioGroup
@@ -79,7 +79,7 @@
                 android:id="@+id/rb_answer_one"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Frozen"
+                android:text="Jeremy Irons"
                 android:textSize="24sp"
                 android:textColor="@color/white"
                 android:layout_marginBottom="30dp"/>
@@ -88,7 +88,7 @@
                 android:id="@+id/rb_answer_two"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="World War Z"
+                android:text="Paul Hogan"
                 android:textSize="24sp"
                 android:textColor="@color/white"
                 android:layout_marginBottom="30dp"/>
@@ -97,7 +97,7 @@
                 android:id="@+id/rb_answer_three"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Fast and Furious 6"
+                android:text="Jared Leto"
                 android:textSize="24sp"
                 android:textColor="@color/white"
                 android:layout_marginBottom="30dp"/>
@@ -106,7 +106,7 @@
                 android:id="@+id/rb_answer_four"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="The Conjuring"
+                android:text="Brad Pitt"
                 android:textSize="24sp"
                 android:textColor="@color/white"
                 android:layout_marginBottom="30dp"/>
