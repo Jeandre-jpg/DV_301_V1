@@ -1,17 +1,4 @@
 # Films.Ly
-
-[![Contributors][contributors-shield]][https://github.com/Jeandre-jpg]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][https://github.com/Jeandre-jpg/DV_301_V1/blob/main/LICENSE.md]
-
-<br />
-<p align="center">
-  <a href="https://github.com/github_username/repo_name">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
-
   <h3 align="center">Films.Ly</h3>
 
   <p align="center">
