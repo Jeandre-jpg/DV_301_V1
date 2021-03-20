@@ -8,7 +8,6 @@ import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_question_three_actors_and_who_they_play_3.*
 
-class QuestionThreeActorsAndWhoTheyPlay3 {
     class QuestionThreeActorsAndWhoTheyPlay3 : AppCompatActivity() {
         override fun onCreate(savedInstanceState: Bundle?) {
             super.onCreate(savedInstanceState)
@@ -19,4 +18,3 @@ class QuestionThreeActorsAndWhoTheyPlay3 {
             })
         }
     }
-}

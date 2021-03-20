@@ -55,10 +55,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:fontFamily="@font/apple_chancery"
+            android:fontFamily="@font/montserrat"
             android:text="Famous Words"
             android:textColor="@color/black"
-            android:textSize="24dp"
+            android:textSize="17dp"
             android:layout_marginLeft="50dp"
             android:textStyle="bold" />
 </androidx.cardview.widget.CardView>
@@ -89,10 +89,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:fontFamily="@font/apple_chancery"
+                android:fontFamily="@font/montserrat"
                 android:text="Directors and Writers"
                 android:textColor="@color/black"
-                android:textSize="21dp"
+                android:textSize="17dp"
                 android:layout_marginLeft="50dp"
                 android:textStyle="bold" />
         </androidx.cardview.widget.CardView>
@@ -123,10 +123,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:fontFamily="@font/apple_chancery"
+                android:fontFamily="@font/montserrat"
                 android:text="Actors and Who they Play"
                 android:textColor="@color/black"
-                android:textSize="18dp"
+                android:textSize="17dp"
                 android:layout_marginLeft="50dp"
                 android:textStyle="bold" />
         </androidx.cardview.widget.CardView>
