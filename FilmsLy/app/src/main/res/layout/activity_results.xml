@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        android:src="@drawable/background2" />
+        android:src="@drawable/background3" />
 
     <LinearLayout
         android:orientation="vertical"
@@ -42,7 +42,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="You Scored 2/3!"
+                    android:text="You Scored "
                     android:textSize="24sp"
                     android:textStyle="bold"
                     android:layout_marginTop="10dp"
@@ -71,7 +71,7 @@
                         android:id="@+id/btn_return"
                         android:layout_width="250dp"
                         android:layout_height="50dp"
-                        android:text="Return Home"
+                        android:text="Return to Categories"
                         android:fontFamily="@font/montserrat"
                         android:textAlignment="center"
                         android:padding="10dp"

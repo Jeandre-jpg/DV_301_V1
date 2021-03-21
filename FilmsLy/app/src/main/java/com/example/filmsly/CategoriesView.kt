@@ -8,8 +8,10 @@ import android.view.View
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_categories_view.*
+import kotlinx.android.synthetic.main.activity_categories_view.btn_return
 import kotlinx.android.synthetic.main.activity_home.*
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_results.*
 
 class CategoriesView : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -28,6 +30,12 @@ class CategoriesView : AppCompatActivity() {
         actorCard.setOnClickListener(View.OnClickListener {
             startActivity(Intent(this, QuestionThreeActorsAndWhoTheyPlay::class.java))
         })
-
+//go back home
+        btn_return.setOnClickListener{
+            val intent = Intent(this, Home::class.java)
+            startActivity(intent)
+            finish()
+        }
     }
 }
+

@@ -35,9 +35,32 @@ object ActorsAndWhoTheyPlay {
             "Brad Pitt"
     )
 
-    questionsList.add(question1)
-    questionsList.add(question2)
-    questionsList.add(question3)
+        val question4 = Question(
+                4,
+                "Which famous Comedian played the character Truman in The Truman Show?",
+                R.drawable.popcorn,
+                "Will Ferrel",
+                "Kevin Hart",
+                "Jim Carrey",
+                "Jack Black"
+        )
+
+        val question5 = Question(
+                5,
+                "Which character played the starring role in the 2017 film: I, Tonya?",
+                R.drawable.popcorn,
+                "Margot Robbie",
+                "Brie Larson",
+                "Emma Stone",
+                "Mila Kunis"
+        )
+
+        questionsList.add(question1)
+        questionsList.add(question2)
+        questionsList.add(question3)
+        questionsList.add(question4)
+        questionsList.add(question5)
+
 
     return questionsList
 

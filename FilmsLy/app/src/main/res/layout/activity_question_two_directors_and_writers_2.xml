@@ -8,8 +8,7 @@
     android:fillViewport="true"
     tools:context=".QuestionTwoDirectorsAndWriters2">
 
-
-    <LinearLayout
+<LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center_horizontal"
@@ -33,14 +32,14 @@
                 android:layout_weight="1"
                 android:max="3"
                 android:minHeight="50dp"
-                android:progress="0"
+                android:progress="2"
                 android:indeterminate="false"/>
 
             <TextView
                 android:id="@+id/tv_progress"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="1/3"
+                android:text="2/3"
                 android:gravity="center"
                 android:padding="15dp"
                 android:textColorHint="@color/purpleSemiLight"
@@ -49,74 +48,85 @@
 
         </LinearLayout>
 
-        <TextView
-            android:id="@+id/tv_question"
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="The 2013 movie, The Great Gatsby, is based on a novel written by whom?"
-            android:gravity="center"
-            android:textSize="24dp"
-            android:textStyle="bold"
-            android:textColor="@color/white"
-            android:layout_marginTop="30dp"/>
-
-        <ImageView
-            android:id="@+id/iv_icon"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_gravity="center"
-            android:src="@drawable/cinema"
-            android:layout_marginTop="30dp"/>
-
-        <RadioGroup
-            android:id="@+id/rg_options"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="1dp"
-            android:layout_marginTop="20dp">
-
-            <RadioButton
-                android:id="@+id/rb_answer_one"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/purpleLight"
+            app:cardCornerRadius="50dp">
+            <TextView
+                android:id="@+id/tv_question"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Oscar Wilde"
-                android:textSize="24sp"
-                android:textColor="@color/white"
-                android:layout_marginBottom="30dp"/>
+                android:fontFamily="@font/montserrat"
+                android:text="The 2013 movie, The Great Gatsby, is based on a novel written by whom?"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginTop="30dp"/>
 
-            <RadioButton
-                android:id="@+id/rb_answer_two"
+            <ImageView
+                android:id="@+id/iv_icon"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="-160dp"
+                android:src="@drawable/cinema" />
+
+            <RadioGroup
+                android:id="@+id/rg_options"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="F. Scott Fitzgerald"
-                android:textSize="24sp"
-                android:textColor="@color/white"
-                android:layout_marginBottom="30dp"/>
+                android:padding="15dp"
+                android:layout_marginTop="200dp">
 
-            <RadioButton
-                android:id="@+id/rb_answer_three"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="James Joyce"
-                android:textSize="24sp"
-                android:textColor="@color/white"
-                android:layout_marginBottom="30dp"/>
+                <RadioButton
+                    android:id="@+id/rb_answer_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Oscar Wilde"
+                    android:fontFamily="@font/montserrat"
+                    android:textSize="24sp"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="30dp"/>
 
-            <RadioButton
-                android:id="@+id/rb_answer_four"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="George R. R. Martin"
-                android:textSize="24sp"
-                android:textColor="@color/white"
-                android:layout_marginBottom="30dp"/>
+                <RadioButton
+                    android:id="@+id/rb_answer_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="F. Scott Fitzgerald"
+                    android:fontFamily="@font/montserrat"
+                    android:textSize="24sp"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="30dp"/>
 
-        </RadioGroup>
+                <RadioButton
+                    android:id="@+id/rb_answer_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
+                    android:text="James Joyce"
+                    android:textSize="24sp"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="30dp"/>
 
+                <RadioButton
+                    android:id="@+id/rb_answer_four"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="George R. R. Martin"
+                    android:fontFamily="@font/montserrat"
+                    android:textSize="24sp"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="30dp"/>
+
+            </RadioGroup>
+        </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
             android:layout_width="250dp"
             android:layout_height="50dp"
-            app:cardCornerRadius="30dp">
+            app:cardCornerRadius="30dp"
+            android:layout_marginTop="-90dp">
             <Button
                 android:id="@+id/btn_next"
                 android:layout_width="250dp"
@@ -126,7 +136,7 @@
                 android:textAlignment="center"
                 android:padding="10dp"
                 android:textStyle="bold"
-                android:textSize="15sp"
+                android:textSize="17sp"
                 android:textColor="@color/white"
                 android:background="@color/goldTrim"
                 tools:ignore="RtlCompat"/>

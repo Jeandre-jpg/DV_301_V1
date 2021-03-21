@@ -4,7 +4,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_launcher_foreground"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_foreground"
         android:supportsRtl="true"
@@ -37,6 +37,18 @@
             android:windowSoftInputMode="adjustResize"
             android:label="Question Three: Actors and Who They Play"/>
         <activity
+            android:name=".QuestionThreeActorsAndWhoTheyPlay4"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FilmsLy"
+            android:windowSoftInputMode="adjustResize"
+            android:label="Question Three: Actors and Who They Play"/>
+        <activity
+            android:name=".QuestionThreeActorsAndWhoTheyPlay5"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FilmsLy"
+            android:windowSoftInputMode="adjustResize"
+            android:label="Question Three: Actors and Who They Play"/>
+        <activity
             android:name=".QuestionTwoDirectorsAndWriters"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.FilmsLy"
@@ -50,6 +62,18 @@
             android:label="Question Two: Directors and Writers"/>
         <activity
             android:name=".QuestionTwoDirectorsAndWriters3"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FilmsLy"
+            android:windowSoftInputMode="adjustResize"
+            android:label="Question Two: Directors and Writers"/>
+        <activity
+            android:name=".QuestionTwoDirectorsAndWriters4"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FilmsLy"
+            android:windowSoftInputMode="adjustResize"
+            android:label="Question Two: Directors and Writers"/>
+        <activity
+            android:name=".QuestionTwoDirectorsAndWriters5"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.FilmsLy"
             android:windowSoftInputMode="adjustResize"
@@ -70,6 +94,20 @@
             />
         <activity
             android:name=".QuestionOneFamousWords3"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FilmsLy"
+            android:windowSoftInputMode="adjustResize"
+            android:label="Question One: Famous Words"
+            />
+        <activity
+            android:name=".QuestionOneFamousWords4"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FilmsLy"
+            android:windowSoftInputMode="adjustResize"
+            android:label="Question One: Famous Words"
+            />
+        <activity
+            android:name=".QuestionOneFamousWords5"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.FilmsLy"
             android:windowSoftInputMode="adjustResize"

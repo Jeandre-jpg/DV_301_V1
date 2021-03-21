@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.RadioButton
 import android.widget.Toast
-import kotlinx.android.synthetic.main.activity_question_one_famous_words.*
+import kotlinx.android.synthetic.main.activity_question_two_directors_and_writers.*
 
 class QuestionTwoDirectorsAndWriters : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -52,7 +52,7 @@ class QuestionTwoDirectorsAndWriters : AppCompatActivity() {
                 }
                 //Toast.makeText(this, "Checked answer: ${answers.text}", Toast.LENGTH_SHORT).show()
                 //TODO: Navigation
-                val intent = Intent(this, QuestionTwoDirectorsAndWriters::class.java)
+                val intent = Intent(this, QuestionTwoDirectorsAndWriters2::class.java)
                 intent.putExtra(FamousWords.USER_NAME, userName)
                 intent.putExtra(FamousWords.WRONG_ANSWERS, wrongAnswers)
                 startActivity(intent)
