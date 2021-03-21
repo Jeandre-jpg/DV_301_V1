@@ -11,7 +11,7 @@ object FamousWords {
         val question1 = Question( 1,
                 "-You cant handle the truth- is a famous quote from which drama?",
            R.drawable.theater,
-                "A few Good Men",
+                "A few Good Men",//true
                 "Men of Honour",
                 "Play Misty for me",
                 "Black Hawk Down"
@@ -22,7 +22,7 @@ object FamousWords {
                 "-There's a passage I got memorized. Ezekiel 25:17- is spoken by " +
                 "Samuel L. Jackson in which film?",
             R.drawable.theater,
-                "Pulp Fiction",
+                "Pulp Fiction",//true
                 "Reservoir Dogs",
                 "Taxi Driver",
                 "Casino"
@@ -35,7 +35,7 @@ object FamousWords {
                 "Dracula Untold",
                 "Guardians of the Galaxy",
                 "Interstellar",
-                "Edge of Tomorrow"
+                "Edge of Tomorrow"//true
         )
 
         val question4 = Question(
@@ -43,7 +43,7 @@ object FamousWords {
                 "-Nobody puts Baby in a corner- is from what movie?",
                 R.drawable.theater,
                 "Flashdance",
-                "Dirty Dancing",
+                "Dirty Dancing",//true
                 "Footloose",
                 "Ghost"
         )
@@ -54,7 +54,7 @@ object FamousWords {
                 R.drawable.theater,
                 "The Princess Diaries",
                 "Killers",
-                "Legally Blonde",
+                "Legally Blonde",//true
                 "The Social Network"
         )
 

@@ -23,6 +23,7 @@ class QuestionThreeActorsAndWhoTheyPlay : AppCompatActivity() {
 
         //set question number and array
 
+        val currentPosition = 1
         val questionNumber: Int = 1
         val question: Question = questionsList[questionNumber - 1]
 
@@ -35,40 +36,52 @@ class QuestionThreeActorsAndWhoTheyPlay : AppCompatActivity() {
         rb_answer_three.text = question.optionThree
         rb_answer_four.text = question.optionFour
 
-        pb_progressBar.progress = questionNumber
-        tv_progress.text = questionNumber.toString() + "/" + questionsList.size.toString()
+
+
+        pb_progressBar.progress = currentPosition
+        tv_progress.text = "$currentPosition" + "/" + pb_progressBar.max
+
 
         //set a btn on click listener
         var answers: RadioButton
         var wrongAnswers: Int = 0
-        btn_next.setOnClickListener{
+        var correctAnswers: Int = 0
+        btn_next.setOnClickListener {
             var id: Int = rg_options.checkedRadioButtonId
-            if (id != -1){
+            if (id != -1) {
                 //Capture answer
                 answers = findViewById(id)
 
-                //Check if answer is yes
-                if (answers.text == question.optionOne){
+
+
+
+                if (answers.text == question.optionOne) {
+                    correctAnswers++
+                    Toast.makeText(this, "Your answer is correct", Toast.LENGTH_SHORT).show()
+
+                } else {
                     wrongAnswers++
+                    Toast.makeText(this, "Your answer is incorrect", Toast.LENGTH_SHORT).show()
                 }
-                //Toast.makeText(this, "Checked answer: ${answers.text}", Toast.LENGTH_SHORT).show()
-                //TODO: Navigation
+
+
                 val intent = Intent(this, QuestionThreeActorsAndWhoTheyPlay2::class.java)
-                intent.putExtra(FamousWords.USER_NAME, userName)
-                intent.putExtra(FamousWords.WRONG_ANSWERS, wrongAnswers)
+                intent.putExtra(Constants.ACTORS_WRONG_ANSWERS, wrongAnswers)
+                intent.putExtra(Constants.ACTORS_CORRECT_ANSWERS, correctAnswers)
                 startActivity(intent)
                 finish()
-            }else{
-                //Give Validation
-                Toast.makeText(this, "Please select your answer", Toast.LENGTH_SHORT).show()
+
+
             }
-        }
-    }
+        }}
+
 
     private fun Activity(intent: Intent) {
 
 
-        val questionsList = ActorsAndWhoTheyPlay.getQuestions()
+        val questionsList = FamousWords.getQuestions()
         Log.i("QuestionsList ", "${questionsList.size}")
+
+
     }
 }

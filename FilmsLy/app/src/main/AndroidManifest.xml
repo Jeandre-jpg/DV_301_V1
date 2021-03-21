@@ -10,7 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FilmsLy">
         <activity
-            android:name=".Results"
+            android:name=".ResultsFamousWords"
+            android:theme="@style/Theme.FilmsLy"></activity>
+        <activity
+            android:name=".ResultsDirectorsAndWriters"
+            android:theme="@style/Theme.FilmsLy"></activity>
+        <activity
+            android:name=".ResultsActors"
             android:theme="@style/Theme.FilmsLy"></activity>
         <activity
             android:name=".CategoriesView"

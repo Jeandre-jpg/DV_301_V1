@@ -18,67 +18,72 @@ class QuestionOneFamousWords : AppCompatActivity() {
         setContentView(R.layout.activity_question_one_famous_words)
 
 
+        //get questions
+        val questionsList = FamousWords.getQuestions()
+        Log.i("QuestionsList ", "${questionsList.size}")
 
+        //set question number and array
 
-                //Get Intent Extra information
-                val userName = intent.getStringExtra(FamousWords.USER_NAME)
+        val currentPosition = 1
+        val questionNumber: Int = 1
+        val question: Question = questionsList[questionNumber - 1]
 
-                //get questions
-                val questionsList = FamousWords.getQuestions()
-                Log.i("QuestionsList ", "${questionsList.size}")
+        //set Ui elements to question 1
 
-                //set question number and array
-
-                val questionNumber: Int = 1
-                val question: Question = questionsList[questionNumber - 1]
-
-                //set Ui elements to question 1
-
-                tv_question.text = question.question
-                iv_icon.setImageResource(question.icon)
-                rb_answer_one.text = question.optionOne
-                rb_answer_two.text = question.optionTwo
-                rb_answer_three.text = question.optionThree
-                rb_answer_four.text = question.optionFour
-
-                pb_progressBar.progress = questionNumber
-                tv_progress.text = questionNumber.toString() + "/" + questionsList.size.toString()
+        tv_question.text = question.question
+        iv_icon.setImageResource(question.icon)
+        rb_answer_one.text = question.optionOne
+        rb_answer_two.text = question.optionTwo
+        rb_answer_three.text = question.optionThree
+        rb_answer_four.text = question.optionFour
 
 
 
-                //set a btn on click listener
-                var answers: RadioButton
-                var wrongAnswers: Int = 0
-                btn_next.setOnClickListener{
-                    var id: Int = rg_options.checkedRadioButtonId
-                    if (id != -1){
-                        //Capture answer
-                        answers = findViewById(id)
-
-                        if(answers.text == question.optionOne){
-                            wrongAnswers++
-                        }
-                        //Navigation
-                        val intent = Intent(this, QuestionOneFamousWords2::class.java)
-                        intent.putExtra(Constants.USER_NAME, userName)
-                        intent.putExtra(Constants.WRONG_ANSWERS, wrongAnswers)
-                        startActivity(intent)
-                        finish()
+        pb_progressBar.progress = currentPosition
+        tv_progress.text = "$currentPosition" + "/" + pb_progressBar.max
 
 
-                    }else{
-                        //Give Validation
-                        Toast.makeText(this, "Please select your answer", Toast.LENGTH_SHORT).show()
-                    }
+        //set a btn on click listener
+        var answers: RadioButton
+        var wrongAnswers: Int = 0
+        var correctAnswers: Int = 0
+        btn_next.setOnClickListener {
+            var id: Int = rg_options.checkedRadioButtonId
+            if (id != -1) {
+                //Capture answer
+                answers = findViewById(id)
+
+
+
+
+                if (answers.text == question.optionOne) {
+                    correctAnswers++
+                    Toast.makeText(this, "Your answer is correct", Toast.LENGTH_SHORT).show()
+
+                } else {
+                    wrongAnswers++
+                    Toast.makeText(this, "Your answer is incorrect", Toast.LENGTH_SHORT).show()
                 }
+
+
+                val intent = Intent(this, QuestionOneFamousWords2::class.java)
+                intent.putExtra(Constants.WORDS_WRONG_ANSWERS, wrongAnswers)
+                intent.putExtra(Constants.WORDS_CORRECT_ANSWERS, correctAnswers)
+                startActivity(intent)
+                finish()
+
+
             }
+        }}
 
 
+    private fun Activity(intent: Intent) {
 
-            private fun Activity(intent: Intent) {
+
+        val questionsList = FamousWords.getQuestions()
+        Log.i("QuestionsList ", "${questionsList.size}")
 
 
-                val questionsList = FamousWords.getQuestions()
-                Log.i("QuestionsList ", "${questionsList.size}")
-            }
-        }
+    }
+}
+

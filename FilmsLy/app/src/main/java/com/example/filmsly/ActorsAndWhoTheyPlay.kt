@@ -9,7 +9,7 @@ object ActorsAndWhoTheyPlay {
     val question1 = Question( 1,
             "Who voices the character of Lightning McQueen in Cars?",
         R.drawable.popcorn,
-            "Owen Wilson",
+            "Owen Wilson",//true
             "Brad Pitt",
             "Vince Vaughn",
             "Jim Carrey"
@@ -22,14 +22,14 @@ object ActorsAndWhoTheyPlay {
             "Michael Cera",
             "Bradley Cooper",
             "David Schwimmer",
-            "Arnold Schwarzenegger"
+            "Arnold Schwarzenegger"//true
     )
 
     val question3 = Question(
             3,
             "Who voices Scar in the Lion King?",
         R.drawable.popcorn,
-            "Jeremy Irons",
+            "Jeremy Irons",//true
             "Paul Hogan",
             "Jared Leto",
             "Brad Pitt"
@@ -41,7 +41,7 @@ object ActorsAndWhoTheyPlay {
                 R.drawable.popcorn,
                 "Will Ferrel",
                 "Kevin Hart",
-                "Jim Carrey",
+                "Jim Carrey",//true
                 "Jack Black"
         )
 
@@ -49,8 +49,8 @@ object ActorsAndWhoTheyPlay {
                 5,
                 "Which character played the starring role in the 2017 film: I, Tonya?",
                 R.drawable.popcorn,
-                "Margot Robbie",
                 "Brie Larson",
+                "Margot Robbie",//true
                 "Emma Stone",
                 "Mila Kunis"
         )
