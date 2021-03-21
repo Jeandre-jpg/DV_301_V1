@@ -119,6 +119,8 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 
 ## Acknowledgments
 
-* www.vecteezy.com
-* https://dribbble.com/
-* etc
+* https://www.vecteezy.com/vector-art/480889-cinema-isometric-design-concept
+* https://dribbble.com/shots/9799987-Live-Quiz
+* https://www.express.co.uk/entertainment/films/1288346/Famous-movie-quotes-quiz-questions-and-answers
+* https://www.joe.co.uk/quiz/quiz-guess-the-movie-star-from-their-imdb-page-197369
+* https://www.proprofs.com/quiz-school/quizshow.php?title=pp-movies-famous-movie-directors-trivia-questions&q=7
