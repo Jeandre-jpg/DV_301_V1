@@ -39,8 +39,8 @@ class QuestionOneFamousWords : AppCompatActivity() {
 
 
 
-        pb_progressBar.progress = currentPosition
-        tv_progress.text = "$currentPosition" + "/" + pb_progressBar.max
+//        pb_progressBar.progress = currentPosition
+//        tv_progress.text = "$currentPosition" + "/" + pb_progressBar.max
 
 
         //set a btn on click listener

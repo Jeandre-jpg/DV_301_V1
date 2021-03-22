@@ -50,6 +50,16 @@
                     android:gravity="center" />
 
                 <TextView
+                    android:id="@+id/et_score"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Thank you for completing this Quiz! Want to see more? Return To Categories Page for more Quizzes"

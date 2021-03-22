@@ -2,9 +2,12 @@ package com.example.filmsly
 
 import android.content.Context
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.Button
+import android.widget.EditText
+import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_results_actors.*
 
 class ResultsActors : AppCompatActivity() {
@@ -12,33 +15,38 @@ class ResultsActors : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_results_actors)
 
-
         val userName = intent.getStringExtra(Constants.USER_NAME)
-        val wrongAnswers = intent.getIntExtra(Constants.ACTORS_WRONG_ANSWERS, 0)
+        val wordsWrongAnswers = intent.getIntExtra(Constants.ACTORS_WRONG_ANSWERS, 0)
+        val wordsCorrectAnswers = intent.getIntExtra(Constants.ACTORS_CORRECT_ANSWERS, 0)
 
         //check which activity
-//        if(wrongAnswers > 0) {
-//            //display the flagged layout
-//            setContentView(R.layout.activity_flag_result)
-//        } else {
-//            //pass layout
-//            setContentView(R.layout.activity_result)
-//        }
+        val score = findViewById<TextView>(R.id.et_score)
+        val sharedPref = getSharedPreferences("myPref", MODE_PRIVATE)
+
+
+
+
+//       score.text.set( "$wordsCorrectAnswers")
+
+
+
+            val editor = sharedPref.edit()
+            editor.putString(Constants.ACTORS_CORRECT_ANSWERS, score.text.toString())
+
+
 
         //make full screen
         window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
 
-        //share preference init
-        val sharedPref = getSharedPreferences("myPref", Context.MODE_PRIVATE)
-        val editor = sharedPref.edit()
 
         //start edit
-        editor.apply {
-            putString(Constants.USER_NAME, userName)
-            putInt(Constants.ACTORS_WRONG_ANSWERS, wrongAnswers)
-
-            apply()
-        }
+//        editor.apply {
+//            putString(Constants.USER_NAME, userName)
+//            putInt(Constants.ACTORS_WRONG_ANSWERS, wordsWrongAnswers)
+//            putInt(Constants.ACTORS_CORRECT_ANSWERS, wordsCorrectAnswers)
+//
+//            apply()
+//        }
 
 
         //go back home
