@@ -1,8 +1,18 @@
 # Films.Ly
-  <h3 align="center">Films.Ly</h3>
-
+ <h1 align="center">
+  <br>
+  <img src="https://user-images.githubusercontent.com/55391556/110301984-6c95a080-8001-11eb-9042-14705eaa2498.jpg">
+  <br>
+  <br>
+</h1>   
+    <h4 align="center"> The Movie Quiz app that keeps on Giving</h4>
   <p align="center">
-    The Movie Quiz app that keeps on Giving
+<img src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white">
+<img src="https://img.shields.io/badge/Kotlin-0095D5?&style=for-the-badge&logo=kotlin&logoColor=white">
+<img src="https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white">
+  </a>
+</p>
+<p align="center">
     <br />
     <a href="https://github.com/Jeandre-jpg/DV_301_V1"><strong>Explore the docs »</strong></a>
     <br />
@@ -13,9 +23,8 @@
     ·
     <a href="https://github.com/Jeandre-jpg/DV_301_V1">Request Feature</a>
   </p>
-</p>
 
-![Banner](https://user-images.githubusercontent.com/55391556/110301984-6c95a080-8001-11eb-9042-14705eaa2498.jpg)
+
 
 <details open="open">
   <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
@@ -33,6 +42,10 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
+    <li><a href="#features">Features and Functions</a></li>
+    <li><a href="#wireframes">Wireframes</a></li>
+    <li><a href="#styleguide">Style Guide</a></li>
+    <li><a href="#userflow">User Flow</a></li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
@@ -77,6 +90,28 @@ To get a local copy up and running follow these simple steps.
    ```sh
    https://developer.android.com/studio
    ```
+
+## Features and Functions
+
+### Features
+
+* User is able to select one out of three categories namely: Famous Words, Actors and Who they Play and Directors and Writers
+* User can add their name under the username functionality
+* See the highest score of each of the categories
+* SharedPref was also used for device storage  
+* Toast was used for extra validation
+
+## Wireframes
+![JeandrèDeVilliers_190025_DV_301_V1_AppWireframes_HighFidelity_1](https://user-images.githubusercontent.com/55391556/112195451-a6c28d00-8c12-11eb-898f-586f8eeca123.jpg)
+
+
+## Style Guide
+![JeandréDeVilliers_190025_StyleGuide](https://user-images.githubusercontent.com/55391556/112196124-6283bc80-8c13-11eb-92ae-bf61a15dc073.jpg)
+
+
+## User Flow
+![JeandrèDeVilliers_190025_DV_301_V1_User-Flow](https://user-images.githubusercontent.com/55391556/112196326-9828a580-8c13-11eb-9ca0-d9a09b1067e5.jpg)
+
    
 ## Usage
 
@@ -105,6 +140,7 @@ Contributions are what make the open source community such an amazing place to b
 
 
 ## License
+
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
