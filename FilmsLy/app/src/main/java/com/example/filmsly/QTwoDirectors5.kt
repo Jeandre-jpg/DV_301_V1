@@ -6,8 +6,10 @@ import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.RadioButton
+import android.widget.TextView
 import android.widget.Toast
 import com.example.filmsly.R.layout.activity_question_two_directors_and_writers_5
+import kotlinx.android.synthetic.main.activity_question_three_actors_and_who_they_play_2.*
 import kotlinx.android.synthetic.main.activity_question_two_directors_and_writers.*
 import kotlinx.android.synthetic.main.activity_question_two_directors_and_writers_5.*
 import kotlinx.android.synthetic.main.activity_question_two_directors_and_writers_5.btn_next
@@ -21,75 +23,51 @@ import kotlinx.android.synthetic.main.activity_question_two_directors_and_writer
 import kotlinx.android.synthetic.main.activity_question_two_directors_and_writers_5.tv_progress
 import kotlinx.android.synthetic.main.activity_question_two_directors_and_writers_5.tv_question
 
-class QuestionTwoDirectorsAndWriters5 : AppCompatActivity() {
+class QTwoDirectors5 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(activity_question_two_directors_and_writers_5)
-
-        //get questions
-        val questionsList = DirectorsAndWriters.getQuestions()
-        Log.i("QuestionsList ", "${questionsList.size}")
-
+        //get questions from constants
+        val questionsList = Constants.getDirectorsWriters()
 
         //set question number and array
+        val questionNumber: Int = 1
+        val question = questionsList[0]
 
-        val currentPosition = 1
-        val questionNumber: Int = 5
-        val question: Question = questionsList[questionNumber - 1]
-
-        //set Ui elements to question 1
-
+        //set UI elements to question 1
         tv_question.text = question.question
-        iv_icon.setImageResource(question.icon)
         rb_answer_one.text = question.optionOne
         rb_answer_two.text = question.optionTwo
         rb_answer_three.text = question.optionThree
-        rb_answer_four.text = question.optionFour
 
+        pb_progressBar.progress = questionNumber
+        tv_progress.text = questionNumber.toString() + "/" + questionsList.size.toString()
 
-
-//        pb_progressBar.progress = currentPosition
-//        tv_progress.text = "$currentPosition" + "/" + pb_progressBar.max
-
-
-        //set a btn on click listener
+        //set a button on click listener
         var answers: RadioButton
-        var wrongAnswers: Int = 0
-        var correctAnswers: Int = 0
-        btn_next.setOnClickListener {
-            var id: Int = rg_options.checkedRadioButtonId
-            if (id != -1) {
-                //Capture answer
+        var directorsCorrectAnswers: Int = 0
+
+
+        btn_next.setOnClickListener{
+            var id = rg_options.checkedRadioButtonId
+
+            if(id != -1){
+                //capture answer
                 answers = findViewById(id)
-
-
-
-                if (answers.text == question.optionOne) {
-                    correctAnswers++
+                if (answers.text === question.optionOne){
+                    directorsCorrectAnswers++
                     Toast.makeText(this, "Your answer is correct", Toast.LENGTH_SHORT).show()
-
-                } else {
-                    wrongAnswers++
-                    Toast.makeText(this, "Your answer is incorrect", Toast.LENGTH_SHORT).show()
                 }
-
-
                 val intent = Intent(this, ResultsDirectorsAndWriters::class.java)
-                intent.putExtra(Constants.DIRECTORS_WRONG_ANSWERS, wrongAnswers)
-                intent.putExtra(Constants.DIRECTORS_CORRECT_ANSWERS, correctAnswers)
+                intent.putExtra(Constants.DIRECTORS_CORRECT_ANSWERS, directorsCorrectAnswers)
                 startActivity(intent)
                 finish()
-
-
+            } else {
+                Toast.makeText(this, "Your answer is incorrect", Toast.LENGTH_SHORT).show()
             }
-        }}
+        }
 
-
-    private fun Activity(intent: Intent) {
-
-
-        val questionsList = DirectorsAndWriters.getQuestions()
-        Log.i("QuestionsList ", "${questionsList.size}")
     }
 }
+
 

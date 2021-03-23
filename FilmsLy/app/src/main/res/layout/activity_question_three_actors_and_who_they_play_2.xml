@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/background2"
     android:fillViewport="true"
-    tools:context=".QuestionThreeActorsAndWhoTheyPlay2">
+    tools:context=".QThreeActors2">
 
 
 

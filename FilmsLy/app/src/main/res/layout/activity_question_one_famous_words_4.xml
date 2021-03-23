@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/background2"
     android:fillViewport="true"
-    tools:context=".QuestionOneFamousWords4">
+    tools:context=".QOneFamousWords4">
 
     <LinearLayout
         android:layout_width="match_parent"

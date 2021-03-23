@@ -42,8 +42,29 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="You Scored "
+                    android:text="Yikes!"
                     android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="You Scored "
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+                <TextView
+                    android:id="@+id/et_score1_"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="24sp"
+                    android:text=" /5"
+                    android:fontFamily="@font/montserrat"
                     android:textStyle="bold"
                     android:layout_marginTop="10dp"
                     android:textColor="@color/black"

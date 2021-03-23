@@ -17,37 +17,25 @@ class Home : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(com.example.filmsly.R.layout.activity_home)
 
-//        val et_name = findViewById<EditText>(R.id.et_name)
+        btn_start.setOnClickListener {
+            if(et_name.text.toString().isEmpty()) {
+                Toast.makeText(this, "Please enter your name", Toast.LENGTH_SHORT).show()
+            } else {
+                var intent = Intent(this, CategoriesView::class.java)
 
-//        //get shared preferences
-//        val sharedPref = getSharedPreferences("myPref", Context.MODE_PRIVATE)
-//
-//        //fab onclick
-//        fab_last_user.setOnClickListener {
-//            //get values
-//            val userName = sharedPref.getString(Constants.USER_NAME, "No User")
-//            val wrongAnswers = sharedPref.getInt(Constants.WRONG_ANSWERS, 0)
+                val sharedPref = getSharedPreferences("myPref", Context.MODE_PRIVATE)
+                val editor = sharedPref.edit()
 
-
-            //Start button Click
-            btn_start.setOnClickListener {
-
-                //Check if name is empty
-                if (et_name.text.toString().isEmpty()) {
-                    Toast.makeText(this, "Please enter your username", Toast.LENGTH_SHORT).show()
-                } else {
-                    val intent = Intent(this, CategoriesView::class.java).apply {
-                        // putExtra(EXTRA_MESSAGE, et_name.text.toString())
-                        intent.putExtra(Constants.USER_NAME, et_name.text.toString())
-                    }
-                    startActivity(intent)
-                    finish()
-
-
+                editor.apply{
+                    putString(Constants.USER_NAME, et_name.text.toString())
+                    apply()
                 }
+
+                startActivity(intent)
+                finish()
             }
-
-
         }
+
+
     }
-//}
+}

@@ -9,47 +9,42 @@ import android.widget.EditText
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_results_actors.*
+import kotlinx.android.synthetic.main.activity_results_actors.btn_return
+import kotlinx.android.synthetic.main.activity_results_actors_2.*
+import kotlinx.android.synthetic.main.activity_results_directors_and_writers.*
 
 class ResultsActors : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_results_actors)
 
-        val userName = intent.getStringExtra(Constants.USER_NAME)
-        val wordsWrongAnswers = intent.getIntExtra(Constants.ACTORS_WRONG_ANSWERS, 0)
-        val wordsCorrectAnswers = intent.getIntExtra(Constants.ACTORS_CORRECT_ANSWERS, 0)
-
-        //check which activity
-        val score = findViewById<TextView>(R.id.et_score)
-        val sharedPref = getSharedPreferences("myPref", MODE_PRIVATE)
-
-
-
-
-//       score.text.set( "$wordsCorrectAnswers")
-
-
-
-            val editor = sharedPref.edit()
-            editor.putString(Constants.ACTORS_CORRECT_ANSWERS, score.text.toString())
-
-
-
-        //make full screen
         window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
 
+        //get values
+        val actorsCorrectAnswers = intent.getIntExtra(Constants.ACTORS_CORRECT_ANSWERS, 0)
+        if (actorsCorrectAnswers >= 2){
+            setContentView(R.layout.activity_results_actors)
+            et_score1.text = "${actorsCorrectAnswers}/5"
+        } else {
+            setContentView(R.layout.activity_results_actors_2)
+            et_score2.text = "${actorsCorrectAnswers}/5"
+        }
+        //get shared preferences
+        val sharedPref = getSharedPreferences("myPref", Context.MODE_PRIVATE)
 
-        //start edit
-//        editor.apply {
-//            putString(Constants.USER_NAME, userName)
-//            putInt(Constants.ACTORS_WRONG_ANSWERS, wordsWrongAnswers)
-//            putInt(Constants.ACTORS_CORRECT_ANSWERS, wordsCorrectAnswers)
-//
-//            apply()
-//        }
+        //store highest score in sharedPrefs
+        var highScore = sharedPref.getInt(Constants.HIGH_SCORE_ACTORS, 0)
+        if (actorsCorrectAnswers > highScore) {
 
+            val editor = sharedPref.edit()
 
-        //go back home
+            editor.apply {
+                putInt(Constants.HIGH_SCORE_ACTORS, actorsCorrectAnswers)
+                apply()
+            }
+        }
+
+        //go back to categories
         btn_return.setOnClickListener{
             val intent = Intent(this, CategoriesView::class.java)
             startActivity(intent)
