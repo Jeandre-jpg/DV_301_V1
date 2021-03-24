@@ -11,7 +11,6 @@ import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_results_actors.*
 import kotlinx.android.synthetic.main.activity_results_actors.btn_return
 import kotlinx.android.synthetic.main.activity_results_actors_2.*
-import kotlinx.android.synthetic.main.activity_results_directors_and_writers.*
 
 class ResultsActors : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

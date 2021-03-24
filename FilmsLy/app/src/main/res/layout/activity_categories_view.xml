@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -71,7 +71,7 @@
             android:layout_gravity="center"
             android:padding="20dp"
             android:clickable="true"
-            android:layout_marginTop="70dp"
+            android:layout_marginTop="10dp"
             android:background="@color/purpleLight"
             app:cardCornerRadius="10dp"
             app:cardElevation="10dp">
@@ -105,7 +105,7 @@
             android:layout_gravity="center"
             android:padding="20dp"
             android:clickable="true"
-            android:layout_marginTop="70dp"
+            android:layout_marginTop="10dp"
             android:background="@color/purpleLight"
             app:cardCornerRadius="10dp"
             app:cardElevation="10dp">
@@ -134,7 +134,7 @@
         <androidx.cardview.widget.CardView
             android:layout_width="250dp"
             android:layout_height="50dp"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="20dp"
             android:layout_gravity="center"
             app:cardCornerRadius="30dp">
             <Button
@@ -151,6 +151,25 @@
                 android:background="@color/goldTrim"
                 tools:ignore="RtlCompat"/>
         </androidx.cardview.widget.CardView>
-
+        <androidx.cardview.widget.CardView
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            app:cardCornerRadius="30dp">
+            <Button
+                android:id="@+id/btn_score"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:text="Go to Score Board"
+                android:fontFamily="@font/montserrat"
+                android:textAlignment="center"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:background="@color/goldTrim"
+                tools:ignore="RtlCompat"/>
+        </androidx.cardview.widget.CardView>
     </LinearLayout>
-</LinearLayout>
+</RelativeLayout>

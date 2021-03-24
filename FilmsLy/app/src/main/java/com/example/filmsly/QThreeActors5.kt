@@ -40,6 +40,7 @@ class QThreeActors5 : AppCompatActivity() {
         rb_answer_one.text = question.optionOne
         rb_answer_two.text = question.optionTwo
         rb_answer_three.text = question.optionThree
+        rb_answer_four.text = question.optionFour
 
         pb_progressBar.progress = questionNumber
         tv_progress.text = questionNumber.toString() + "/" + questionsList.size.toString()

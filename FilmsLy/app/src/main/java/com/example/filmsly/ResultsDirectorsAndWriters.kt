@@ -7,7 +7,6 @@ import android.os.Bundle
 import android.view.View
 import android.widget.EditText
 import android.widget.TextView
-import kotlinx.android.synthetic.main.activity_results_actors.*
 import kotlinx.android.synthetic.main.activity_results_directors_and_writers.*
 import kotlinx.android.synthetic.main.activity_results_directors_and_writers.btn_return
 import kotlinx.android.synthetic.main.activity_results_directors_and_writers_2.*
@@ -20,7 +19,7 @@ class ResultsDirectorsAndWriters : AppCompatActivity() {
         window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
 
         //get values
-        val directorsCorrectAnswers = intent.getIntExtra(Constants.ACTORS_CORRECT_ANSWERS, 0)
+        val directorsCorrectAnswers = intent.getIntExtra(Constants.DIRECTORS_CORRECT_ANSWERS, 0)
 
         if (directorsCorrectAnswers <= 2){
             setContentView(R.layout.activity_results_directors_and_writers)

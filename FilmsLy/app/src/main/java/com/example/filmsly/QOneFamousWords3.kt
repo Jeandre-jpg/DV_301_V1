@@ -8,8 +8,10 @@ import android.widget.RadioButton
 import android.widget.Toast
 import com.example.filmsly.R.layout.activity_question_one_famous_words_3
 import kotlinx.android.synthetic.main.activity_question_one_famous_words.*
+import kotlinx.android.synthetic.main.activity_question_one_famous_words.pb_progressBar
+import kotlinx.android.synthetic.main.activity_question_one_famous_words.tv_progress
+import kotlinx.android.synthetic.main.activity_question_one_famous_words_2.*
 import kotlinx.android.synthetic.main.activity_question_one_famous_words_3.btn_next
-import kotlinx.android.synthetic.main.activity_question_one_famous_words_3.iv_icon
 import kotlinx.android.synthetic.main.activity_question_one_famous_words_3.rb_answer_four
 import kotlinx.android.synthetic.main.activity_question_one_famous_words_3.rb_answer_one
 import kotlinx.android.synthetic.main.activity_question_one_famous_words_3.rb_answer_three
@@ -22,7 +24,7 @@ class QOneFamousWords3 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(activity_question_one_famous_words_3)
 
-        var wordsCorrectAnswers: Int = intent.getIntExtra(Constants.ACTORS_CORRECT_ANSWERS, 0)
+        var wordsCorrectAnswers: Int = intent.getIntExtra(Constants.WORDS_CORRECT_ANSWERS, 0)
 
         //get questions from constants
         val questionsList = Constants.getFamousWords()
@@ -36,12 +38,14 @@ class QOneFamousWords3 : AppCompatActivity() {
         rb_answer_one.text = question.optionOne
         rb_answer_two.text = question.optionTwo
         rb_answer_three.text = question.optionThree
+        rb_answer_four.text = question.optionFour
 
         pb_progressBar.progress = questionNumber
         tv_progress.text = questionNumber.toString() + "/" + questionsList.size.toString()
 
         //set a button on click listener
         var answers: RadioButton
+
 
         btn_next.setOnClickListener{
             var id = rg_options.checkedRadioButtonId
@@ -64,3 +68,4 @@ class QOneFamousWords3 : AppCompatActivity() {
 
     }
 }
+

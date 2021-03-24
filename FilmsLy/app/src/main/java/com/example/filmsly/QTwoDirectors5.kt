@@ -9,8 +9,10 @@ import android.widget.RadioButton
 import android.widget.TextView
 import android.widget.Toast
 import com.example.filmsly.R.layout.activity_question_two_directors_and_writers_5
+import kotlinx.android.synthetic.main.activity_question_three_actors_and_who_they_play.*
 import kotlinx.android.synthetic.main.activity_question_three_actors_and_who_they_play_2.*
 import kotlinx.android.synthetic.main.activity_question_two_directors_and_writers.*
+import kotlinx.android.synthetic.main.activity_question_two_directors_and_writers_3.*
 import kotlinx.android.synthetic.main.activity_question_two_directors_and_writers_5.*
 import kotlinx.android.synthetic.main.activity_question_two_directors_and_writers_5.btn_next
 import kotlinx.android.synthetic.main.activity_question_two_directors_and_writers_5.iv_icon
@@ -42,6 +44,7 @@ class QTwoDirectors5 : AppCompatActivity() {
         rb_answer_one.text = question.optionOne
         rb_answer_two.text = question.optionTwo
         rb_answer_three.text = question.optionThree
+        rb_answer_four.text = question.optionFour
 
         pb_progressBar.progress = questionNumber
         tv_progress.text = questionNumber.toString() + "/" + questionsList.size.toString()
@@ -71,5 +74,4 @@ class QTwoDirectors5 : AppCompatActivity() {
 
     }
 }
-
 

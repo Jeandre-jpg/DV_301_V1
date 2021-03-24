@@ -31,6 +31,14 @@ class CategoriesView : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
+        btn_score.setOnClickListener{
+            val intent = Intent(this, Score::class.java)
+            startActivity(intent)
+            finish()
+        }
     }
+
+
 }
+
 

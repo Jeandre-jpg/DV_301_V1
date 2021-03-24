@@ -5,7 +5,17 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.*
+import com.example.filmsly.R.layout.activity_question_one_famous_words
 import kotlinx.android.synthetic.main.activity_question_one_famous_words.*
+import kotlinx.android.synthetic.main.activity_question_one_famous_words.btn_next
+import kotlinx.android.synthetic.main.activity_question_one_famous_words.pb_progressBar
+import kotlinx.android.synthetic.main.activity_question_one_famous_words.rb_answer_one
+import kotlinx.android.synthetic.main.activity_question_one_famous_words.rb_answer_three
+import kotlinx.android.synthetic.main.activity_question_one_famous_words.rb_answer_four
+import kotlinx.android.synthetic.main.activity_question_one_famous_words.rb_answer_two
+import kotlinx.android.synthetic.main.activity_question_one_famous_words.rg_options
+import kotlinx.android.synthetic.main.activity_question_one_famous_words.tv_progress
+import kotlinx.android.synthetic.main.activity_question_one_famous_words.tv_question
 
 class QOneFamousWords : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -18,12 +28,12 @@ class QOneFamousWords : AppCompatActivity() {
         //set question number and array
         val questionNumber: Int = 1
         val question = questionsList[questionNumber - 1]
-
         //set UI elements to question 1
         tv_question.text = question.question
         rb_answer_one.text = question.optionOne
         rb_answer_two.text = question.optionTwo
         rb_answer_three.text = question.optionThree
+        rb_answer_four.text = question.optionFour
 
         pb_progressBar.progress = questionNumber
         tv_progress.text = questionNumber.toString() + "/" + questionsList.size.toString()
@@ -53,6 +63,3 @@ class QOneFamousWords : AppCompatActivity() {
 
     }
 }
-
-
-

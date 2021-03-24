@@ -7,10 +7,12 @@ import android.util.Log
 import android.widget.RadioButton
 import android.widget.Toast
 import com.example.filmsly.R.layout.activity_question_two_directors_and_writers_4
+import kotlinx.android.synthetic.main.activity_question_three_actors_and_who_they_play.*
 import kotlinx.android.synthetic.main.activity_question_three_actors_and_who_they_play_2.*
 import kotlinx.android.synthetic.main.activity_question_two_directors_and_writers.*
 import kotlinx.android.synthetic.main.activity_question_two_directors_and_writers.pb_progressBar
 import kotlinx.android.synthetic.main.activity_question_two_directors_and_writers.tv_progress
+import kotlinx.android.synthetic.main.activity_question_two_directors_and_writers_3.*
 import kotlinx.android.synthetic.main.activity_question_two_directors_and_writers_4.btn_next
 import kotlinx.android.synthetic.main.activity_question_two_directors_and_writers_4.iv_icon
 import kotlinx.android.synthetic.main.activity_question_two_directors_and_writers_4.rb_answer_four
@@ -26,6 +28,7 @@ class QTwoDirectors4 : AppCompatActivity() {
         setContentView(activity_question_two_directors_and_writers_4)
 
         var directorsCorrectAnswers: Int = intent.getIntExtra(Constants.DIRECTORS_CORRECT_ANSWERS, 0)
+
         //get questions from constants
         val questionsList = Constants.getDirectorsWriters()
 
@@ -38,6 +41,7 @@ class QTwoDirectors4 : AppCompatActivity() {
         rb_answer_one.text = question.optionOne
         rb_answer_two.text = question.optionTwo
         rb_answer_three.text = question.optionThree
+        rb_answer_four.text = question.optionFour
 
         pb_progressBar.progress = questionNumber
         tv_progress.text = questionNumber.toString() + "/" + questionsList.size.toString()
@@ -67,5 +71,3 @@ class QTwoDirectors4 : AppCompatActivity() {
 
     }
 }
-
-

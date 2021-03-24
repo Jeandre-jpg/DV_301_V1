@@ -6,8 +6,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.TextView
-import kotlinx.android.synthetic.main.activity_results_actors.*
-import kotlinx.android.synthetic.main.activity_results_directors_and_writers.*
 import kotlinx.android.synthetic.main.activity_results_famous_words.*
 import kotlinx.android.synthetic.main.activity_results_famous_words.btn_return
 import kotlinx.android.synthetic.main.activity_results_famous_words_2.*
@@ -20,7 +18,7 @@ class ResultsFamousWords : AppCompatActivity() {
         window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
 
         //get values
-        val wordsCorrectAnswers = intent.getIntExtra(Constants.ACTORS_CORRECT_ANSWERS, 0)
+        val wordsCorrectAnswers = intent.getIntExtra(Constants.WORDS_CORRECT_ANSWERS, 0)
 
         if (wordsCorrectAnswers <= 2){
             setContentView(R.layout.activity_results_famous_words)

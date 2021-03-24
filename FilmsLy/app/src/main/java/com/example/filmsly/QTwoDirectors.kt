@@ -24,18 +24,19 @@ class QTwoDirectors : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_question_two_directors_and_writers)
 
+
         //get questions from constants
         val questionsList = Constants.getDirectorsWriters()
 
         //set question number and array
         val questionNumber: Int = 1
         val question = questionsList[questionNumber - 1]
-
         //set UI elements to question 1
         tv_question.text = question.question
         rb_answer_one.text = question.optionOne
         rb_answer_two.text = question.optionTwo
         rb_answer_three.text = question.optionThree
+        rb_answer_four.text = question.optionFour
 
         pb_progressBar.progress = questionNumber
         tv_progress.text = questionNumber.toString() + "/" + questionsList.size.toString()

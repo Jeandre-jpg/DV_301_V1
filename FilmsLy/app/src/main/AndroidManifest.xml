@@ -25,6 +25,9 @@
             android:name=".Home"
             android:theme="@style/Theme.FilmsLy"/>
         <activity
+            android:name=".Score"
+            android:theme="@style/Theme.FilmsLy"/>
+        <activity
             android:name=".QThreeActors"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.FilmsLy"

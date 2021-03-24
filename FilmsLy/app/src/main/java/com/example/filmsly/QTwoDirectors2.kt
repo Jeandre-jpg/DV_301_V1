@@ -7,6 +7,7 @@ import android.util.Log
 import android.widget.RadioButton
 import android.widget.Toast
 import com.example.filmsly.R.layout.activity_question_two_directors_and_writers_2
+import kotlinx.android.synthetic.main.activity_question_three_actors_and_who_they_play.*
 import kotlinx.android.synthetic.main.activity_question_three_actors_and_who_they_play_2.*
 import kotlinx.android.synthetic.main.activity_question_two_directors_and_writers.*
 import kotlinx.android.synthetic.main.activity_question_two_directors_and_writers.pb_progressBar
@@ -30,7 +31,6 @@ class QTwoDirectors2 : AppCompatActivity() {
         //get questions from constants
         val questionsList = Constants.getDirectorsWriters()
 
-
         //set question number and array
         val questionNumber: Int = 2
         val question = questionsList[questionNumber - 1]
@@ -40,12 +40,14 @@ class QTwoDirectors2 : AppCompatActivity() {
         rb_answer_one.text = question.optionOne
         rb_answer_two.text = question.optionTwo
         rb_answer_three.text = question.optionThree
+        rb_answer_four.text = question.optionFour
 
         pb_progressBar.progress = questionNumber
         tv_progress.text = questionNumber.toString() + "/" + questionsList.size.toString()
 
         //set a button on click listener
         var answers: RadioButton
+
 
         btn_next.setOnClickListener{
             var id = rg_options.checkedRadioButtonId
@@ -68,6 +70,4 @@ class QTwoDirectors2 : AppCompatActivity() {
 
     }
 }
-
-
 
