@@ -4,28 +4,25 @@ import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
-import android.widget.Button
-import android.widget.EditText
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import kotlinx.android.synthetic.main.activity_results_actors.*
-import kotlinx.android.synthetic.main.activity_results_actors.btn_return
-import kotlinx.android.synthetic.main.activity_results_actors_2.*
+import kotlinx.android.synthetic.main.activity_results_bad.*
+import kotlinx.android.synthetic.main.activity_results_bad.btn_return
+import kotlinx.android.synthetic.main.activity_results_good.*
 
 class ResultsActors : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_results_actors)
+        setContentView(R.layout.activity_results_good)
 
         window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
 
         //get values
         val actorsCorrectAnswers = intent.getIntExtra(Constants.ACTORS_CORRECT_ANSWERS, 0)
         if (actorsCorrectAnswers <= 2){
-            setContentView(R.layout.activity_results_actors)
+            setContentView(R.layout.activity_results_bad)
             et_score1.text = "${actorsCorrectAnswers}/5"
         } else {
-            setContentView(R.layout.activity_results_actors_2)
+            setContentView(R.layout.activity_results_good)
             et_score2.text = "${actorsCorrectAnswers}/5"
         }
         //get shared preferences

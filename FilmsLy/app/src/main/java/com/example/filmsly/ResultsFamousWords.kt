@@ -2,32 +2,29 @@ package com.example.filmsly
 
 import android.content.Context
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.TextView
-import kotlinx.android.synthetic.main.activity_results_famous_words.*
-import kotlinx.android.synthetic.main.activity_results_famous_words.btn_return
-import kotlinx.android.synthetic.main.activity_results_famous_words_2.*
+import androidx.appcompat.app.AppCompatActivity
+import kotlinx.android.synthetic.main.activity_results_bad.*
+import kotlinx.android.synthetic.main.activity_results_bad.btn_return
+import kotlinx.android.synthetic.main.activity_results_good.*
 
 class ResultsFamousWords : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_results_famous_words)
+        setContentView(R.layout.activity_results_good)
 
         window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
 
         //get values
         val wordsCorrectAnswers = intent.getIntExtra(Constants.WORDS_CORRECT_ANSWERS, 0)
-
         if (wordsCorrectAnswers <= 2){
-            setContentView(R.layout.activity_results_famous_words)
-            et_score_1.text = "${wordsCorrectAnswers}/5"
+            setContentView(R.layout.activity_results_bad)
+            et_score1.text = "${wordsCorrectAnswers}/5"
         } else {
-            setContentView(R.layout.activity_results_famous_words_2)
+            setContentView(R.layout.activity_results_good)
             et_score2.text = "${wordsCorrectAnswers}/5"
         }
-
         //get shared preferences
         val sharedPref = getSharedPreferences("myPref", Context.MODE_PRIVATE)
 
@@ -51,4 +48,3 @@ class ResultsFamousWords : AppCompatActivity() {
         }
     }
 }
-

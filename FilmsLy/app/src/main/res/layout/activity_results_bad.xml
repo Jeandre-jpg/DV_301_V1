@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".ResultsActors">
 
     <ImageView
         android:layout_width="match_parent"
@@ -41,12 +42,18 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Wow!"
+                    android:text="Yikes!"
                     android:textSize="24sp"
                     android:textStyle="bold"
                     android:layout_marginTop="10dp"
                     android:textColor="@color/black"
                     android:gravity="center" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/no"
+                    android:layout_gravity="center"/>
 
                 <TextView
                     android:layout_width="match_parent"
@@ -59,7 +66,7 @@
                     android:gravity="center" />
 
                 <TextView
-                    android:id="@+id/et_score2"
+                    android:id="@+id/et_score1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textSize="24sp"

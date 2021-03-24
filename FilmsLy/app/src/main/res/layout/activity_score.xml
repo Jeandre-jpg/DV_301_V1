@@ -86,13 +86,24 @@
                         android:textStyle="bold" />
 
                     <TextView
+                        android:id="@+id/user_name_w"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jeandrè"
+                        android:textSize="25sp"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="210dp"
+                        android:fontFamily="@font/montserrat"
+                        android:textColor="@color/purpleSemiDark"/>
+
+                    <TextView
                         android:id="@+id/words_high"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text=" /5"
-                        android:textSize="50sp"
-                        android:layout_marginTop="25dp"
-                        android:layout_marginLeft="210dp"
+                        android:textSize="25sp"
+                        android:layout_marginTop="50dp"
+                        android:layout_marginLeft="240dp"
                         android:fontFamily="@font/montserrat"
                         android:textColor="@color/purpleSemiDark"/>
                 </androidx.cardview.widget.CardView>
@@ -130,16 +141,28 @@
                         android:layout_marginLeft="50dp"
                         android:textStyle="bold" />
 
+                   <TextView
+                        android:id="@+id/user_name_d"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ashley"
+                        android:textSize="25sp"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="210dp"
+                        android:fontFamily="@font/montserrat"
+                        android:textColor="@color/purpleSemiDark"/>
+
                     <TextView
                         android:id="@+id/directors_high"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text=" /5"
-                        android:textSize="50sp"
-                        android:layout_marginTop="25dp"
-                        android:layout_marginLeft="210dp"
+                        android:textSize="25sp"
+                        android:layout_marginTop="50dp"
+                        android:layout_marginLeft="240dp"
                         android:fontFamily="@font/montserrat"
                         android:textColor="@color/purpleSemiDark"/>
+
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
@@ -176,13 +199,24 @@
                         android:textStyle="bold" />
 
                     <TextView
+                        android:id="@+id/user_name_a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tammy"
+                        android:textSize="25sp"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="210dp"
+                        android:fontFamily="@font/montserrat"
+                        android:textColor="@color/purpleSemiDark"/>
+
+                    <TextView
                         android:id="@+id/actors_high"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text=" /5"
-                        android:textSize="50sp"
-                        android:layout_marginTop="25dp"
-                        android:layout_marginLeft="210dp"
+                        android:textSize="25sp"
+                        android:layout_marginTop="50dp"
+                        android:layout_marginLeft="240dp"
                         android:fontFamily="@font/montserrat"
                         android:textColor="@color/purpleSemiDark"/>
                 </androidx.cardview.widget.CardView>

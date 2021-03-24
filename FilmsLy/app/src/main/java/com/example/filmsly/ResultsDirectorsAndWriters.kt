@@ -2,31 +2,28 @@ package com.example.filmsly
 
 import android.content.Context
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.EditText
-import android.widget.TextView
-import kotlinx.android.synthetic.main.activity_results_directors_and_writers.*
-import kotlinx.android.synthetic.main.activity_results_directors_and_writers.btn_return
-import kotlinx.android.synthetic.main.activity_results_directors_and_writers_2.*
+import androidx.appcompat.app.AppCompatActivity
+import kotlinx.android.synthetic.main.activity_results_bad.*
+import kotlinx.android.synthetic.main.activity_results_bad.btn_return
+import kotlinx.android.synthetic.main.activity_results_good.*
 
 class ResultsDirectorsAndWriters : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_results_directors_and_writers)
+        setContentView(R.layout.activity_results_good)
 
         window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
 
         //get values
         val directorsCorrectAnswers = intent.getIntExtra(Constants.DIRECTORS_CORRECT_ANSWERS, 0)
-
         if (directorsCorrectAnswers <= 2){
-            setContentView(R.layout.activity_results_directors_and_writers)
-            et_score1_.text = "${directorsCorrectAnswers}/5"
+            setContentView(R.layout.activity_results_bad)
+            et_score1.text = "${directorsCorrectAnswers}/5"
         } else {
-            setContentView(R.layout.activity_results_directors_and_writers_2)
-            et_score2_.text = "${directorsCorrectAnswers}/5"
+            setContentView(R.layout.activity_results_good)
+            et_score2.text = "${directorsCorrectAnswers}/5"
         }
         //get shared preferences
         val sharedPref = getSharedPreferences("myPref", Context.MODE_PRIVATE)
