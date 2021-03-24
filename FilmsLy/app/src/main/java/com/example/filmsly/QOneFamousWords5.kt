@@ -28,12 +28,14 @@ class QOneFamousWords5 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(activity_question_one_famous_words_5)
 
+        var wordsCorrectAnswers: Int = intent.getIntExtra(Constants.ACTORS_CORRECT_ANSWERS, 0)
+
         //get questions from constants
         val questionsList = Constants.getFamousWords()
 
         //set question number and array
-        val questionNumber: Int = 1
-        val question = questionsList[0]
+        val questionNumber: Int = 5
+        val question = questionsList[questionNumber - 1]
 
         //set UI elements to question 1
         tv_question.text = question.question
@@ -46,7 +48,6 @@ class QOneFamousWords5 : AppCompatActivity() {
 
         //set a button on click listener
         var answers: RadioButton
-        var wordsCorrectAnswers: Int = 0
 
         btn_next.setOnClickListener{
             var id = rg_options.checkedRadioButtonId

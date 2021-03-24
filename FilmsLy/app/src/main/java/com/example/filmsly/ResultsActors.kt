@@ -22,7 +22,7 @@ class ResultsActors : AppCompatActivity() {
 
         //get values
         val actorsCorrectAnswers = intent.getIntExtra(Constants.ACTORS_CORRECT_ANSWERS, 0)
-        if (actorsCorrectAnswers >= 2){
+        if (actorsCorrectAnswers <= 2){
             setContentView(R.layout.activity_results_actors)
             et_score1.text = "${actorsCorrectAnswers}/5"
         } else {

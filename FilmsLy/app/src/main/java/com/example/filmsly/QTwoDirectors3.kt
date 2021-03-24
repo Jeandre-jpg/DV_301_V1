@@ -31,8 +31,8 @@ class QTwoDirectors3 : AppCompatActivity() {
         val questionsList = Constants.getDirectorsWriters()
 
         //set question number and array
-        val questionNumber: Int = 1
-        val question = questionsList[0]
+        val questionNumber: Int = 3
+        val question = questionsList[questionNumber - 1]
 
         //set UI elements to question 1
         tv_question.text = question.question

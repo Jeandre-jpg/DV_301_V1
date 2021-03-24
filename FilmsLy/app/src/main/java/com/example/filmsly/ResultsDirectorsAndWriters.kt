@@ -20,9 +20,9 @@ class ResultsDirectorsAndWriters : AppCompatActivity() {
         window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
 
         //get values
-        val directorsCorrectAnswers = intent.getIntExtra(Constants.DIRECTORS_CORRECT_ANSWERS, 0)
+        val directorsCorrectAnswers = intent.getIntExtra(Constants.ACTORS_CORRECT_ANSWERS, 0)
 
-        if (directorsCorrectAnswers >= 2){
+        if (directorsCorrectAnswers <= 2){
             setContentView(R.layout.activity_results_directors_and_writers)
             et_score1_.text = "${directorsCorrectAnswers}/5"
         } else {

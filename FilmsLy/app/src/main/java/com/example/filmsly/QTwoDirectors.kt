@@ -29,7 +29,7 @@ class QTwoDirectors : AppCompatActivity() {
 
         //set question number and array
         val questionNumber: Int = 1
-        val question = questionsList[0]
+        val question = questionsList[questionNumber - 1]
 
         //set UI elements to question 1
         tv_question.text = question.question

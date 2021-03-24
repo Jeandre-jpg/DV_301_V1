@@ -26,13 +26,12 @@ class QTwoDirectors4 : AppCompatActivity() {
         setContentView(activity_question_two_directors_and_writers_4)
 
         var directorsCorrectAnswers: Int = intent.getIntExtra(Constants.DIRECTORS_CORRECT_ANSWERS, 0)
-
         //get questions from constants
         val questionsList = Constants.getDirectorsWriters()
 
         //set question number and array
-        val questionNumber: Int = 1
-        val question = questionsList[0]
+        val questionNumber: Int = 4
+        val question = questionsList[questionNumber - 1]
 
         //set UI elements to question 1
         tv_question.text = question.question

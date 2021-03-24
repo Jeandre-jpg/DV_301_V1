@@ -20,9 +20,9 @@ class ResultsFamousWords : AppCompatActivity() {
         window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
 
         //get values
-        val wordsCorrectAnswers = intent.getIntExtra(Constants.WORDS_CORRECT_ANSWERS, 0)
+        val wordsCorrectAnswers = intent.getIntExtra(Constants.ACTORS_CORRECT_ANSWERS, 0)
 
-        if (wordsCorrectAnswers >= 2){
+        if (wordsCorrectAnswers <= 2){
             setContentView(R.layout.activity_results_famous_words)
             et_score_1.text = "${wordsCorrectAnswers}/5"
         } else {
