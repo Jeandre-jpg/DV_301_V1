@@ -53,6 +53,7 @@ class QOneFamousWords : AppCompatActivity() {
                     Toast.makeText(this, "Your answer is correct", Toast.LENGTH_SHORT).show()
                 }
                 val intent = Intent(this, QOneFamousWords2::class.java)
+                overridePendingTransition(R.anim.slide_from_right, R.anim.slide_to_left)
                 intent.putExtra(Constants.WORDS_CORRECT_ANSWERS, wordsCorrectAnswers)
                 startActivity(intent)
                 finish()

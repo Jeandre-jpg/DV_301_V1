@@ -61,6 +61,7 @@ class QTwoDirectors3 : AppCompatActivity() {
                     Toast.makeText(this, "Your answer is correct", Toast.LENGTH_SHORT).show()
                 }
                 val intent = Intent(this, QTwoDirectors4::class.java)
+                overridePendingTransition(R.anim.slide_from_right, R.anim.slide_to_left)
                 intent.putExtra(Constants.DIRECTORS_CORRECT_ANSWERS, directorsCorrectAnswers)
                 startActivity(intent)
                 finish()

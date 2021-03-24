@@ -18,6 +18,7 @@ class MainActivity : AppCompatActivity() {
 
         btn_start.setOnClickListener(View.OnClickListener {
             startActivity(Intent(this, Home::class.java))
+            overridePendingTransition(R.anim.slide_from_right, R.anim.slide_to_left)
         })
 
 

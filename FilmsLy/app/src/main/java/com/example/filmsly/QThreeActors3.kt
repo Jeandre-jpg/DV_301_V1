@@ -58,6 +58,7 @@ class QThreeActors3 : AppCompatActivity() {
                     Toast.makeText(this, "Your answer is correct", Toast.LENGTH_SHORT).show()
                 }
                 val intent = Intent(this, QThreeActors4::class.java)
+                overridePendingTransition(R.anim.slide_from_right, R.anim.slide_to_left)
                 intent.putExtra(Constants.ACTORS_CORRECT_ANSWERS, actorsCorrectAnswers)
                 startActivity(intent)
                 finish()

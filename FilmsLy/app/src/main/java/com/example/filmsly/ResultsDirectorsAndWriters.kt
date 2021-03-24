@@ -20,9 +20,11 @@ class ResultsDirectorsAndWriters : AppCompatActivity() {
         val directorsCorrectAnswers = intent.getIntExtra(Constants.DIRECTORS_CORRECT_ANSWERS, 0)
         if (directorsCorrectAnswers <= 2){
             setContentView(R.layout.activity_results_bad)
+            overridePendingTransition(R.anim.slide_from_right, R.anim.slide_to_left)
             et_score1.text = "${directorsCorrectAnswers}/5"
         } else {
             setContentView(R.layout.activity_results_good)
+            overridePendingTransition(R.anim.slide_from_right, R.anim.slide_to_left)
             et_score2.text = "${directorsCorrectAnswers}/5"
         }
         //get shared preferences
@@ -45,6 +47,7 @@ class ResultsDirectorsAndWriters : AppCompatActivity() {
             val intent = Intent(this, CategoriesView::class.java)
             startActivity(intent)
             finish()
+            overridePendingTransition(R.anim.slide_from_left, R.anim.slide_to_right)
         }
     }
 }

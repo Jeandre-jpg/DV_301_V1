@@ -22,7 +22,7 @@ class Home : AppCompatActivity() {
                 Toast.makeText(this, "Please enter your name", Toast.LENGTH_SHORT).show()
             } else {
                 var intent = Intent(this, CategoriesView::class.java)
-
+                overridePendingTransition(com.example.filmsly.R.anim.slide_from_right, com.example.filmsly.R.anim.slide_to_left)
                 val sharedPref = getSharedPreferences("myPref", Context.MODE_PRIVATE)
                 val editor = sharedPref.edit()
 
