@@ -77,6 +77,12 @@
 
 ## About The Project
 
+### Project Description
+
+Movies and Films have always been a part of human history and pop culture that works together to make remberal moments in our lifes. But what goes behind the movies? What novels were most famous films based off of, from where is that famous one-liner from and other questions like who played that one guy in that one movie again?
+
+With Films.Ly the user will be put to the challenge on their cinematic movie knowledge through a fun and interactive quiz application!
+
 # Mockups
 
 <h2 align="center"> The App </h2>
@@ -122,15 +128,19 @@ To get a local copy up and running follow these simple steps.
   ```
 
 ### Installation
+Here are a couple of ways to clone this repo:
 
-1. Clone the repo
+1. Android Studio </br>
+`Android Studio` -> `File` -> `New` -> `From Version Control` -> `Git`</br>
+Enter `https://github.com/Jeandre-jpg/DV_301_V1.git` into the URL field and press the `Clone` button.
+
+2. Command-line + Android Studio </br>
+Run the following in the command-line to clone the project:
    ```sh
    git clone https://github.com/Jeandre-jpg/DV_301_V1.git
    ```
-2. Install Android Studio and Android Studio Emulator
-   ```sh
-   https://developer.android.com/studio
-   ```
+Open `Android Studio` and select `File | Open...` from the menu. Select cloned directory and press `Open` button
+
 
 ## Features and Functions
 
@@ -148,30 +158,31 @@ To get a local copy up and running follow these simple steps.
 
 #### Challenges
 
-Challenges for me included having to pay attention to finer details of
-the software that included the use of themes in my Android
-Manifest files. As well as the working of Shared preference and user
-total count.
+* Pay attention to finer details of the software 
+* Pay attention to Android themes in my Android Manifest files
+* Understanding the workings of Shared preference for Device Storage
+* Adding the total count for user's scores and high scores
 
 ### Peer Reviews
 #### What I learned
 
-The peer-review feedback was mostly positive in terms of my designs, theme and aesthetic of my application.
-Areas, where improvement can be done, includes, text on buttons being more comprehensible, background colours 
-to make questions more legible and finally only utilising two fonts instead of three fonts that seem out of place.
+* Positive in terms of my designs, theme and aesthetic of my application
+* Text on buttons being more comprehensible
+* Change background colours to make questions more legible
+* Only utilise two fonts instead of three fonts that seem out of place
 
 #### Highlights
 
-The highlights of this project were the chance to work with a new platform that was new and exciting. Implementing my own unique
-style and ideas into this programming software was a breeze and fun to experience.
+* The chance to work with a new platform that was new and exciting
+* Implementing my own unique style and ideas into this programming software 
+* Fun to experience
 
 #### Future Changes
 
-Future features that I would like included in projects to come are
-more interactivity throughout the application, more design
-elements within the scope of the brief and finally better my design
-skills for a beautiful design application that is also cohesive as a
-whole.
+* More interactivity throughout the application
+* more design elements within the scope of the brief 
+* Better my design skills for a beautiful design application 
+* Create a cohesive application
 
 
 ## Wireframes
