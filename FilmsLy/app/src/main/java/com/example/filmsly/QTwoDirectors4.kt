@@ -25,6 +25,8 @@ class QTwoDirectors4 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(activity_question_two_directors_and_writers_4)
 
+        var directorsCorrectAnswers: Int = intent.getIntExtra(Constants.DIRECTORS_CORRECT_ANSWERS, 0)
+
         //get questions from constants
         val questionsList = Constants.getDirectorsWriters()
 
@@ -43,7 +45,7 @@ class QTwoDirectors4 : AppCompatActivity() {
 
         //set a button on click listener
         var answers: RadioButton
-        var directorsCorrectAnswers: Int = 0
+
 
         btn_next.setOnClickListener{
             var id = rg_options.checkedRadioButtonId

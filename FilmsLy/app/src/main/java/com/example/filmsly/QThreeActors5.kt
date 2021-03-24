@@ -27,12 +27,13 @@ class QThreeActors5 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(activity_question_three_actors_and_who_they_play_5)
 
+        var actorsCorrectAnswers: Int = intent.getIntExtra(Constants.ACTORS_CORRECT_ANSWERS, 0)
         //get questions from constants
         val questionsList = Constants.getActors()
 
         //set question number and array
-        val questionNumber: Int = 1
-        val question = questionsList[0]
+        val questionNumber: Int = 5
+        val question = questionsList[questionNumber - 1]
 
         //set UI elements to question 1
         tv_question.text = question.question
@@ -45,7 +46,7 @@ class QThreeActors5 : AppCompatActivity() {
 
         //set a button on click listener
         var answers: RadioButton
-        var actorsCorrectAnswers: Int = 0
+
 
         btn_next.setOnClickListener{
             var id = rg_options.checkedRadioButtonId
