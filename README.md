@@ -1,4 +1,15 @@
-# Films.Ly
+<h1 align="center">
+  <br>
+ # Films.Ly
+ <br>
+  <br>
+</h1> 
+<h1 align="center">
+  <br>
+  <img src="https://user-images.githubusercontent.com/55391556/112451809-91f31000-8d5e-11eb-8cc1-84f8c23be54c.png" alt="logo" width="100" height="100">
+  <br>
+  <br>
+</h1>  
  <h1 align="center">
   <br>
   <img src="https://user-images.githubusercontent.com/55391556/110301984-6c95a080-8001-11eb-9042-14705eaa2498.jpg">
@@ -202,9 +213,20 @@ Open `Android Studio` and select `File | Open...` from the menu. Select cloned d
    
 ## Usage
 
-First Draft Demonstration:
+#### First Draft Demonstration:
 
 https://user-images.githubusercontent.com/55391556/111886725-98892c80-89d8-11eb-9f80-9f18f0ffd33d.mp4
+
+#### Final Video Demonstration:
+
+#### Download
+
+1. Github </br>
+Enter `https://github.com/Jeandre-jpg/DV_301_V1/blob/main/Video%20Presentation/Jeandr%C3%A8DeVilliers_190025_DV_301_V1_VideoPresentation.mp4` into the URL field and press the `Download` button to access the video demonstration.
+
+2. Click on the link below to access the video demonstration and press the `Download` button.
+
+https://github.com/Jeandre-jpg/DV_301_V1/blob/main/Video%20Presentation/Jeandr%C3%A8DeVilliers_190025_DV_301_V1_VideoPresentation.mp4
 
 ## Roadmap
 
