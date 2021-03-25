@@ -1,12 +1,14 @@
 <h1 align="center">
   <br>
- # Films.Ly
+  <img src="https://user-images.githubusercontent.com/55391556/112451809-91f31000-8d5e-11eb-8cc1-84f8c23be54c.png" alt="logo" width="100" height="100">
+  <br>
+  Films.Ly
  <br>
   <br>
 </h1> 
 <h1 align="center">
   <br>
-  <img src="https://user-images.githubusercontent.com/55391556/112451809-91f31000-8d5e-11eb-8cc1-84f8c23be54c.png" alt="logo" width="100" height="100">
+ 
   <br>
   <br>
 </h1>  
